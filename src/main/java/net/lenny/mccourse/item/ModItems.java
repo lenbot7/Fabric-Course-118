@@ -2,6 +2,7 @@ package net.lenny.mccourse.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.lenny.mccourse.MCCourseMod;
+import net.lenny.mccourse.item.custom.DowsingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
@@ -16,6 +17,10 @@ public class ModItems {
 
     public static final Item RAW_ORICHALCUM = registerItem("raw_orichalcum",
             new Item(new FabricItemSettings().group(ModItemGroups.COURSE)));
+
+
+    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroups.COURSE).maxDamage(32)));
 
 
     private static Item registerItem(String name, Item item) {
