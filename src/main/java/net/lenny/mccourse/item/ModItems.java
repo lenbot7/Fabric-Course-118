@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.lenny.mccourse.MCCourseMod;
 import net.lenny.mccourse.item.custom.DowsingRodItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -24,6 +23,9 @@ public class ModItems {
 
     public static final Item TURNIP = registerItem("turnip",
             new Item(new FabricItemSettings().group(ModItemGroups.COURSE).food(ModFoodComponents.TURNIP)));
+
+    public static final Item COAL_SLIVER = registerItem("coal_sliver",
+            new Item(new FabricItemSettings().group(ModItemGroups.COURSE)));
 
 
     private static Item registerItem(String name, Item item) {
